@@ -26,7 +26,7 @@ export default function FeedbackCard({ result, blank }) {
 
       <div className="feedback-section">
         <h4>正确例句</h4>
-        <p><em>"{result.correctExample}"</em></p>
+        <p><em>&quot;{result.correctExample}&quot;</em></p>
       </div>
 
       {result.commonMistakes && result.commonMistakes.length > 0 && (
