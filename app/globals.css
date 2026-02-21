@@ -39,6 +39,36 @@ body {
   opacity: 0.95;
 }
 
+/* Public Stats Banner */
+.pub-stats-banner {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.95);
+  animation: fadeIn 0.6s ease;
+}
+
+.pub-stats-banner strong { color: #fff; }
+
+.pub-stats-sep {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* Quiz Container */
 .quiz-container {
   background: white;
